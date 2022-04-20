@@ -1,0 +1,74 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=1.2cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\colorlet{awesome}{darkblue}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./examples/profile.png}
+\name{}{Kemal Bora Bayraktar}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{Biçer Sk. Zekeriyaköy Mah. Sarıyer, İstanbul}
+%\mobile{+90 536 657 44 91}
+\email{kemalborabayraktar@gmail.com}
+\homepage{kemalborabayraktar.com}
+\github{bora-bayraktar}
+\linkedin{kemal-bora-b-586b3812a}
+%\dateofbirth{January 1st, 1970}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {Kemal Bora Bayraktar}%~~~·~~~CV}
+  {}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/education.tex}
+\input{cv/experience.tex}
+\input{cv/volunteer_experience.tex}
+\input{cv/skills.tex}
+\input{cv/honors_awards.tex}
+\input{cv/certificates.tex}
+
+\end{document}
